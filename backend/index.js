@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 // مسیر POST برای حدس عدد
-app.post('/guess', (req, res) => {
+app.post('/api/guess', (req, res) => {
     const { number } = req.body;
     attempts++;
 

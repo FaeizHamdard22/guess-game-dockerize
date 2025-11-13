@@ -11,7 +11,7 @@ function App() {
     e.preventDefault();
     try {
       // به جای localhost، آدرس IP سرور خودت
-      const res = await axios.post('http://192.168.56.10:5000/guess', { number: Number(guess) });
+      const res = await axios.post('/api/guess', { number: Number(guess) });
       setMessage(res.data.message);
       setAttempts(res.data.attempts);
       setGuess('');
